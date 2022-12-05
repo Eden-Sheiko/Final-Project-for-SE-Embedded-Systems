@@ -1,7 +1,5 @@
 #include "../Inc/Server_Main.h"
 
-
-
 /*
  *	This example will show how to transmit and receive
  *	packets using the LWIP. The following code will

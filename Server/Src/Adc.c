@@ -1,18 +1,8 @@
 #include "../Inc/Adc.h"
 
-/*
- * ADC - PA_0
- * connected to 3v3 GPIO
- * the signal should be between
- * ~3900 to ~4100
- * if yes the function return True
- * ELSE FALSE
- *
- */
-
 volatile double AD_RES = FALSE;
 
-uint8_t ADC_main() {
+uint8_t ADC_test() {
 	HAL_ADC_Start(ADC_1);
 	AD_RES = HAL_ADC_GetValue(ADC_1);
 	while (TRUE) {
@@ -22,7 +12,8 @@ uint8_t ADC_main() {
 			return TRUE;
 		}
 		printf("ADC value = %ld \r\n", HAL_ADC_GetValue(ADC_1));
-		return 0xff;
+		printf("False\r\n");
+		return FAIL;
 	}
 
 }

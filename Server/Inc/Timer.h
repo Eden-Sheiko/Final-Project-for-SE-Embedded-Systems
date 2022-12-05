@@ -5,8 +5,7 @@
 #include "stm32f7xx_hal.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
+
 
 // TIM HANDLES:
 extern TIM_HandleTypeDef htim3;
@@ -24,6 +23,6 @@ extern TIM_HandleTypeDef htim3;
 #define TIM_3 &htim3
 
 // FUNCTIONS:
-uint8_t TIMER_main();
+uint8_t TIMER_test();
 
 #endif /* INC_TIMER_H_ */

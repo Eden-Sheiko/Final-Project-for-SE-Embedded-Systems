@@ -1,22 +1,7 @@
 #include "../Inc/Spi.h"
 
-/*
- * SPI (Master):
- * 	PA4	SPI1_NSS
- *	PA5	SPI1_SCK
- *	PA6	SPI1_MISO
- *	PB5	SPI1_MOSI
- *
- * SPI (Slave):
- *  PE2	SPI4_SCK
- *	PE4	SPI4_NSS
- *	PE5	SPI4_MISO
- *	PE6	SPI4_MOSI
- */
-
 uint8_t SPI_slave_callback_success = FALSE;
 uint8_t SPI_master_callback_success = FALSE;
-
 
 uint8_t SPI_send(uint8_t data_size, uint8_t *data_sent, uint8_t iteration) {
 	uint8_t buffer_send[BUFFER_SIZE];

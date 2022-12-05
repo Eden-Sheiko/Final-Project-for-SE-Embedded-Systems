@@ -1,16 +1,5 @@
 #include "../Inc/I2c.h"
 
-/*
- * I2C1 (Master):
- * PB6	I2C1_SCL
- * PB9	I2C1_SDA
- *
- * I2C2 (Slave):
- * PB10	I2C2_SCL
- * PB11	I2C2_SDA
-
- *  Slave address: 20
- */
 
 volatile uint8_t i2c1_master_callback_success = FALSE;
 volatile uint8_t i2c2_slave_callback_success = FALSE;

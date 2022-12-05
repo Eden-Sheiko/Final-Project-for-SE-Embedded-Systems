@@ -4,7 +4,7 @@ volatile uint8_t timer_callback_success = FALSE; // interrupt flag timer
 volatile uint8_t second = ZERO; // seconds
 volatile uint8_t minute = ZERO; // minutes
 
-uint8_t TIMER_main() {
+uint8_t TIMER_test() {
 	printf("Program start\r\n");
 	HAL_TIM_Base_Start_IT(TIM_3);
 	while (TRUE) {

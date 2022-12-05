@@ -39,12 +39,6 @@ uint8_t UART_send(uint8_t data_size, uint8_t *data_sent, uint8_t iteration) {
 }
 
 
-
-int campare_function(const void *first, const void *secand) {
-	uint8_t res = ZERO;
-	return res = strncmp(first, secand, strlen(first));
-}
-
 int compare_arrays(const uint8_t *arr_1 , const uint8_t *arr_2 ,const uint8_t size){
 	for (uint8_t i = ZERO; i < size; ++i) {
 		if (arr_1[i] != arr_2[i]) {
